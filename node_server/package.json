@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "express": "^4.16.1",
+    "nodemailer": "latest",
+    "mysql": "^2.15.0"
+  }
+}

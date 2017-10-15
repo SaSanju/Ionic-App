@@ -1,0 +1,33 @@
+<!--
+  Generated template for the ForgotPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>forgot</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<form (ngSubmit)="forgForm()">
+		<ion-list>
+			<ion-item>
+	    		<ion-label color="primary">Email</ion-label>
+	  			<ion-input type="text" placeholder="Enter your email" [(ngModel)]="forgot.username" name="email" required></ion-input>
+			</ion-item>
+			<ion-item>
+	    		<ion-label color="primary">New Password</ion-label>
+	  			<ion-input type="text" placeholder="Enter your new password" [(ngModel)]="forgot.password" name="password" required></ion-input>
+			</ion-item>
+			<ion-item>
+	    		<button ion-button full type="submit" style="height: 40px;">Reset password</button>
+			</ion-item>
+		</ion-list>
+	</form>
+	<button ion-button clear (click)="login();">Back to Login</button>
+</ion-content>
